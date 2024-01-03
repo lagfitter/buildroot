@@ -32,8 +32,8 @@ if (use_goma) {
   compiler_prefix = string_join(" ", compiler_args)
   link_prefix = string_join(" ", link_args)
 } else if (use_ccache) {
-  compiler_prefix = "ccache "
-  link_prefix = "ccache "
+  compiler_prefix = "${ccache_bin} "
+  link_prefix = "${ccache_bin} "
 } else {
   compiler_prefix = ""
   link_prefix = ""

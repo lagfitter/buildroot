@@ -22,4 +22,7 @@
 declare_args() {
   # Set to true to enable ccache.  Probably doesn't work on windows.
   use_ccache = false
+
+  # the path or name of the ccache binary, e.g. "sccache"
+  ccache_bin = "ccache"
 }
